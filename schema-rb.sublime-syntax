@@ -1,0 +1,21 @@
+%YAML 1.2
+---
+name: schema.rb
+file_extensions:
+  - schema.rb
+scope: source.ruby.schema_rb
+contexts:
+  main:
+    - include: create_table
+    - include: 'scope:source.ruby#expressions'
+
+  create_table:
+    - match: \b(create_table)\b
+      scope: source.ruby.schema_rb
+      push:
+        - meta_content_scope: string.quoted.double.ruby
+        - match: ' "([^"]+)"'
+          captures:
+            1: entity.name.table
+        - match: '\b'
+          pop: true
