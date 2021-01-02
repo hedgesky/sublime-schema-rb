@@ -6,7 +6,7 @@ This package introduces quick navigation across tables defined in `schema.rb` (R
 
 Just use `Goto Symbol` when you have `schema.rb` opened: <kbd>⌘</kbd><kbd>R</kbd> on Mac, <kbd>Ctrl</kbd><kbd>R</kbd> on Windows.
 
-![demo gif](https://github.com/hedgesky/sublime-schema-rb/raw/master/demo.gif)
+<img src="https://raw.githubusercontent.com/hedgesky/sublime-schema-rb/master/demo.gif">
 
 ## Installation
 
